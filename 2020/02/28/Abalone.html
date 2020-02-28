@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | fastpages</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="summary" />
+<meta property="og:description" content="summary" />
+<link rel="canonical" href="https://rvernagus.github.io/blog/2020/02/28/Abalone.html" />
+<meta property="og:url" content="https://rvernagus.github.io/blog/2020/02/28/Abalone.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-28T00:00:00-06:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://rvernagus.github.io/blog/2020/02/28/Abalone.html"},"description":"summary","@type":"BlogPosting","url":"https://rvernagus.github.io/blog/2020/02/28/Abalone.html","headline":"Title","dateModified":"2020-02-28T00:00:00-06:00","datePublished":"2020-02-28T00:00:00-06:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://rvernagus.github.io/blog/feed.xml" title="fastpages" />
+
+  <script>
+  function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+  }
+  window.onload = wrap_img;
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      // add link icon to anchor tags
+      var elem = document.querySelectorAll(".anchor-link")
+      elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+      // remove paragraph tags in rendered toc (happens from notebooks)
+      var toctags = document.querySelectorAll(".toc-entry")
+      toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+  </script>
+</head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/">Ray’s Dev Blog</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="page-description">summary</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-02-28T00:00:00-06:00" itemprop="datePublished">
+        Feb 28, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+<a href="https://github.com/rvernagus/blog/tree/master/_notebooks/2020-02-28-Abalone.ipynb" role="button">
+    <img class="notebook-badge-image" src="https://img.shields.io/static/v1?label=&message=View%20On%20GitHub&color=586069&logo=github&labelColor=2f363d">
+</a>
+</div><div class="px-2">
+    <a href="https://colab.research.google.com/github/rvernagus/blog/blob/master/_notebooks/2020-02-28-Abalone.ipynb">
+        <img class="notebook-badge-image" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-02-28-Abalone.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#r &quot;nuget: Microsoft.ML&quot;</span>
+<span class="c1">#load &quot;./Modules/MLWrapper.fs&quot;</span>
+<span class="nb">open</span> <span class="n">Microsoft</span><span class="o">.</span><span class="n">ML</span>
+<span class="nb">open</span> <span class="n">Microsoft</span><span class="o">.</span><span class="n">ML</span><span class="o">.</span><span class="n">Data</span>
+<span class="nb">open</span> <span class="n">System</span><span class="o">.</span><span class="n">IO</span>
+<span class="nb">open</span> <span class="n">System</span><span class="o">.</span><span class="n">Net</span>
+<span class="nb">open</span> <span class="n">FunctionalMl</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="o">&lt;|</span> <span class="n">File</span><span class="o">.</span><span class="n">Exists</span><span class="p">(</span><span class="s2">&quot;abalone.data&quot;</span><span class="p">)</span> <span class="n">then</span>
+    <span class="n">use</span> <span class="n">client</span> <span class="o">=</span> <span class="n">new</span> <span class="n">WebClient</span><span class="p">()</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">DownloadFile</span><span class="p">(</span><span class="s2">&quot;http://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data&quot;</span><span class="p">,</span> <span class="s2">&quot;abalone.data&quot;</span><span class="p">)</span>
+
+<span class="n">printfn</span> <span class="s2">&quot;Data file has </span><span class="si">%d</span><span class="s2"> lines&quot;</span> <span class="o">&lt;|</span> <span class="n">File</span><span class="o">.</span><span class="n">ReadLines</span><span class="p">(</span><span class="s2">&quot;abalone.data&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">Count</span><span class="p">()</span>
+<span class="n">File</span><span class="o">.</span><span class="n">ReadLines</span><span class="p">(</span><span class="s2">&quot;abalone.data&quot;</span><span class="p">)</span>
+<span class="o">|&gt;</span> <span class="n">Seq</span><span class="o">.</span><span class="n">take</span> <span class="mi">5</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Data file has 4177 lines
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table><thead><tr><th><i>index</i></th><th>value</th></tr></thead><tbody><tr><td>0</td><td>M,0.455,0.365,0.095,0.514,0.2245,0.101,0.15,15</td></tr><tr><td>1</td><td>M,0.35,0.265,0.09,0.2255,0.0995,0.0485,0.07,7</td></tr><tr><td>2</td><td>F,0.53,0.42,0.135,0.677,0.2565,0.1415,0.21,9</td></tr><tr><td>3</td><td>M,0.44,0.365,0.125,0.516,0.2155,0.114,0.155,10</td></tr><tr><td>4</td><td>I,0.33,0.255,0.08,0.205,0.0895,0.0395,0.055,7</td></tr></tbody></table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="o">&lt;</span><span class="n">CLIMutable</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="nb">type</span> <span class="n">AbaloneData</span> <span class="o">=</span>
+    <span class="p">{</span>
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">Sex</span> <span class="p">:</span> <span class="n">string</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">Length</span> <span class="p">:</span> <span class="n">float32</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">Diameter</span> <span class="p">:</span> <span class="n">float32</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">Height</span> <span class="p">:</span> <span class="n">float32</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">WholeWeight</span> <span class="p">:</span> <span class="n">float32</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">ShuckedWeight</span> <span class="p">:</span> <span class="n">float32</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">VisceraWeight</span> <span class="p">:</span> <span class="n">float32</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">ShellWeight</span> <span class="p">:</span> <span class="n">float32</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">LoadColumn</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">ColumnName</span><span class="p">(</span><span class="s2">&quot;Label&quot;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">Rings</span> <span class="p">:</span> <span class="n">single</span>
+    <span class="p">}</span>
+
+<span class="n">let</span> <span class="n">allData</span> <span class="o">=</span> <span class="n">ML</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">LoadFromTextFile</span><span class="o">&lt;</span><span class="n">AbaloneData</span><span class="o">&gt;</span><span class="p">(</span><span class="s2">&quot;abalone.data&quot;</span><span class="p">,</span> <span class="n">hasHeader</span> <span class="o">=</span> <span class="n">false</span><span class="p">,</span> <span class="n">separatorChar</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">trainData</span><span class="p">,</span> <span class="n">testData</span> <span class="o">=</span>
+    <span class="n">ML</span><span class="o">.</span><span class="n">shuffle</span> <span class="n">allData</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">split</span> <span class="mf">0.2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">featureColumns</span> <span class="o">=</span> <span class="p">[</span><span class="o">|</span> <span class="s2">&quot;Sex&quot;</span><span class="p">;</span> <span class="s2">&quot;Length&quot;</span><span class="p">;</span> <span class="s2">&quot;Diameter&quot;</span><span class="p">;</span> <span class="s2">&quot;Height&quot;</span><span class="p">;</span> <span class="s2">&quot;WholeWeight&quot;</span><span class="p">;</span> <span class="s2">&quot;ShuckedWeight&quot;</span><span class="p">;</span> <span class="s2">&quot;VisceraWeight&quot;</span><span class="p">;</span> <span class="s2">&quot;ShellWeight&quot;</span> <span class="o">|</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">pipeline</span> <span class="o">=</span> 
+    <span class="n">EstimatorChain</span><span class="p">()</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">append</span> <span class="o">&lt;|</span> <span class="n">ML</span><span class="o">.</span><span class="n">onehot</span> <span class="s2">&quot;Sex&quot;</span> <span class="o">//</span> <span class="n">one</span><span class="o">-</span><span class="n">hot</span> <span class="n">encode</span> <span class="n">the</span> <span class="n">Sex</span> <span class="n">feature</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">append</span> <span class="o">&lt;|</span> <span class="n">ML</span><span class="o">.</span><span class="n">concatenate</span> <span class="s2">&quot;Features&quot;</span> <span class="n">featureColumns</span> <span class="o">//</span> <span class="n">Concatenate</span> <span class="n">feature</span> <span class="n">columns</span> <span class="n">into</span> <span class="n">a</span> <span class="n">single</span> <span class="n">new</span> <span class="n">column</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">append</span> <span class="o">&lt;|</span> <span class="n">ML</span><span class="o">.</span><span class="n">normalizeLp</span> <span class="s2">&quot;Features&quot;</span> <span class="s2">&quot;FeaturesNorm&quot;</span> <span class="o">//</span> <span class="n">Normalize</span> <span class="n">features</span> <span class="n">into</span> <span class="n">a</span> <span class="n">new</span> <span class="n">column</span><span class="p">,</span> <span class="n">FeaturesNorm</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">transformer</span> <span class="o">=</span>
+    <span class="n">pipeline</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">fit</span> <span class="n">trainData</span> <span class="o">//</span> <span class="n">Fit</span> <span class="n">our</span> <span class="n">pipeline</span> <span class="n">on</span> <span class="n">the</span> <span class="n">training</span> <span class="n">data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">transformedData</span> <span class="o">=</span>
+    <span class="n">trainData</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">transform</span> <span class="n">transformer</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Print the data as it was loaded from the file:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ML</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">CreateEnumerable</span><span class="o">&lt;</span><span class="n">AbaloneData</span><span class="o">&gt;</span><span class="p">(</span><span class="n">trainData</span><span class="p">,</span> <span class="n">reuseRowObject</span> <span class="o">=</span> <span class="n">false</span><span class="p">)</span>
+<span class="o">|&gt;</span> <span class="n">Seq</span><span class="o">.</span><span class="n">take</span> <span class="mi">3</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table><thead><tr><th><i>index</i></th><th>Sex</th><th>Length</th><th>Diameter</th><th>Height</th><th>WholeWeight</th><th>ShuckedWeight</th><th>VisceraWeight</th><th>ShellWeight</th><th>Rings</th></tr></thead><tbody><tr><td>0</td><td>F</td><td>0.49</td><td>0.38</td><td>0.125</td><td>0.549</td><td>0.245</td><td>0.1075</td><td>0.174</td><td>10</td></tr><tr><td>1</td><td>M</td><td>0.685</td><td>0.52</td><td>0.15</td><td>1.343</td><td>0.4635</td><td>0.292</td><td>0.4</td><td>13</td></tr><tr><td>2</td><td>M</td><td>0.645</td><td>0.485</td><td>0.215</td><td>1.514</td><td>0.546</td><td>0.2615</td><td>0.635</td><td>16</td></tr></tbody></table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Compare that to the data as transformed by the pipeline. First, we one-hot encoded the <code>Sex</code> column. Then we concatenated all of the feature columns into a single new vector column, <code>Features</code>. Lastly, we normalized the values and put them into a new vector column, <code>FeaturesNorm</code>. Notice that the first three values of <code>Features</code> are the one-hot encoded values of <code>Sex</code>.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="o">&lt;</span><span class="n">CLIMutable</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="nb">type</span> <span class="n">AbaloneDataTransformed</span> <span class="o">=</span>
+    <span class="p">{</span>
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">ColumnName</span><span class="p">(</span><span class="s2">&quot;Label&quot;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">Rings</span> <span class="p">:</span> <span class="n">single</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">VectorType</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">Features</span> <span class="p">:</span> <span class="n">single</span><span class="p">[]</span>
+
+        <span class="p">[</span><span class="o">&lt;</span><span class="n">VectorType</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">&gt;</span><span class="p">]</span>
+        <span class="n">FeaturesNorm</span> <span class="p">:</span> <span class="n">single</span><span class="p">[]</span>
+    <span class="p">}</span>
+
+<span class="n">ML</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">CreateEnumerable</span><span class="o">&lt;</span><span class="n">AbaloneDataTransformed</span><span class="o">&gt;</span><span class="p">(</span><span class="n">transformedData</span><span class="p">,</span> <span class="n">reuseRowObject</span> <span class="o">=</span> <span class="n">false</span><span class="p">)</span>
+<span class="o">|&gt;</span> <span class="n">Seq</span><span class="o">.</span><span class="n">take</span> <span class="mi">3</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table><thead><tr><th><i>index</i></th><th>Rings</th><th>Features</th><th>FeaturesNorm</th></tr></thead><tbody><tr><td>0</td><td>10</td><td>[ 1, 0, 0, 0.49, 0.38, 0.125, 0.549, 0.245, 0.1075, 0.174 ]</td><td>[ 0.74465656, 0, 0, 0.36488172, 0.2829695, 0.09308207, 0.40881646, 0.18244086, 0.08005058, 0.12957023 ]</td></tr><tr><td>1</td><td>13</td><td>[ 0, 1, 0, 0.685, 0.52, 0.15, 1.343, 0.4635, 0.292, 0.4 ]</td><td>[ 0, 0.4983909, 0, 0.34139776, 0.25916326, 0.07475864, 0.669339, 0.23100418, 0.14553015, 0.19935636 ]</td></tr><tr><td>2</td><td>16</td><td>[ 0, 1, 0, 0.645, 0.485, 0.215, 1.514, 0.546, 0.2615, 0.635 ]</td><td>[ 0, 0.4583784, 0, 0.29565406, 0.22231354, 0.098551355, 0.6939849, 0.2502746, 0.119865954, 0.29107028 ]</td></tr></tbody></table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create an estimator:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">estimator</span> <span class="o">=</span> 
+    <span class="n">ML</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">Regression</span><span class="o">.</span><span class="n">Trainers</span><span class="o">.</span><span class="n">LbfgsPoissonRegression</span><span class="p">(</span><span class="n">featureColumnName</span> <span class="o">=</span> <span class="s2">&quot;FeaturesNorm&quot;</span><span class="p">)</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">downcastEstimator</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, we use cross-validation to select the best performing model.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">model</span> <span class="o">=</span>
+    <span class="n">trainData</span> <span class="o">//</span> <span class="n">Begin</span> <span class="k">with</span> <span class="n">the</span> <span class="n">training</span> <span class="n">data</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">transform</span> <span class="n">transformer</span> <span class="o">//</span> <span class="n">Transform</span> <span class="n">using</span> <span class="n">the</span> <span class="n">transformer</span> <span class="n">built</span> <span class="n">above</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">crossValidateRegression</span> <span class="n">estimator</span> <span class="mi">3</span> <span class="o">//</span> <span class="mi">3</span><span class="o">-</span><span class="n">fold</span> <span class="n">cross</span><span class="o">-</span><span class="n">validation</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">printRegressionCvMetrics</span> <span class="o">//</span> <span class="n">Print</span> <span class="n">cross</span><span class="o">-</span><span class="n">fold</span> <span class="n">metrics</span>
+    <span class="o">|&gt;</span> <span class="n">Seq</span><span class="o">.</span><span class="n">maxBy</span> <span class="p">(</span><span class="n">fun</span> <span class="n">cvResult</span> <span class="o">-&gt;</span> <span class="n">cvResult</span><span class="o">.</span><span class="n">Metrics</span><span class="o">.</span><span class="n">RSquared</span><span class="p">)</span> <span class="o">//</span> <span class="n">Select</span> <span class="n">the</span> <span class="n">best</span> <span class="n">model</span> <span class="n">by</span> <span class="n">R</span><span class="o">-</span><span class="n">squared</span>
+    <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">cvResult</span> <span class="o">-&gt;</span> <span class="n">cvResult</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>------------------
+Cross Validation Metrics
+------------------
+Mean Absolute Error: 1.550251
+Mean Squared Error: 4.711480
+Root Mean Squared Error: 2.170481
+R-squared: 0.560272
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we can evaluate our model against the test data.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span>
+<span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">transform</span> <span class="o">&lt;|</span> <span class="n">ML</span><span class="o">.</span><span class="n">transform</span> <span class="n">transformer</span> <span class="n">testData</span> <span class="o">//</span> <span class="n">Transform</span> <span class="n">the</span> <span class="n">test</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">get</span> <span class="n">predictions</span>
+<span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">Regression</span><span class="o">.</span><span class="n">Evaluate</span> <span class="o">//</span> <span class="n">Get</span> <span class="n">test</span> <span class="n">metrics</span>
+<span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">printRegressionMetrics</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>------------------
+Test Metrics
+------------------
+Mean Absolute Error: 1.477898
+Mean Squared Error: 4.036597
+Root Mean Squared Error: 2.009128
+R-squared: 0.552453
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<null>
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's pretend we have new data (for convenience we are just randomly re-sampling the test data) to see what predictions our model makes. You will see two values:</p>
+<ul>
+<li><code>Label</code>: the actual number of rings from the example being predicted. Our model never sees this value but we show it below so that you can see how close the predicted number of rings are to the actual.</li>
+<li><code>Score</code>: the predicted number of rings made by the model. The closer this is to the Label, the more accurate is the prediction.</li>
+</ul>
+<p>You can run this cell multiple times to get new random samples and their predictions!</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="o">&lt;</span><span class="n">CLIMutable</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="nb">type</span> <span class="n">RegressionPrediction</span> <span class="o">=</span> <span class="p">{</span> <span class="n">Label</span> <span class="p">:</span> <span class="n">single</span><span class="p">;</span> <span class="n">Score</span> <span class="p">:</span> <span class="n">single</span> <span class="p">}</span>
+
+<span class="o">//</span> <span class="n">Show</span> <span class="n">some</span> <span class="n">sample</span> <span class="n">predictions</span>
+<span class="n">let</span> <span class="n">sampleData</span> <span class="o">=</span>
+    <span class="n">testData</span>
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">shuffle</span> 
+    <span class="o">|&gt;</span> <span class="n">ML</span><span class="o">.</span><span class="n">transform</span> <span class="n">transformer</span>
+
+<span class="n">let</span> <span class="n">predictionEngine</span> <span class="o">=</span> <span class="n">ML</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">CreatePredictionEngine</span><span class="o">&lt;</span><span class="n">AbaloneDataTransformed</span><span class="p">,</span> <span class="n">RegressionPrediction</span><span class="o">&gt;</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+<span class="n">ML</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">Data</span><span class="o">.</span><span class="n">CreateEnumerable</span><span class="o">&lt;</span><span class="n">AbaloneDataTransformed</span><span class="o">&gt;</span><span class="p">(</span><span class="n">sampleData</span><span class="p">,</span> <span class="n">reuseRowObject</span> <span class="o">=</span> <span class="n">false</span><span class="p">)</span>
+<span class="o">|&gt;</span> <span class="n">Seq</span><span class="o">.</span><span class="n">take</span> <span class="mi">5</span>
+<span class="o">|&gt;</span> <span class="n">Seq</span><span class="o">.</span><span class="n">map</span> <span class="n">predictionEngine</span><span class="o">.</span><span class="n">Predict</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table><thead><tr><th><i>index</i></th><th>Label</th><th>Score</th></tr></thead><tbody><tr><td>0</td><td>11</td><td>8.895894</td></tr><tr><td>1</td><td>8</td><td>10.011565</td></tr><tr><td>2</td><td>7</td><td>6.0247774</td></tr><tr><td>3</td><td>9</td><td>7.9776998</td></tr><tr><td>4</td><td>11</td><td>10.351429</td></tr></tbody></table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+&lt;/div&gt;
+</null></div></div></div></div></div></div>
+
+
+  </div><a class="u-url" href="/blog/2020/02/28/Abalone.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">fastpages</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">fastpages</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list">
+  <li><a href="https://github.com/rvernagus"><svg class="social svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rvernagus</span></a></li><li><a href="https://www.twitter.com/fastdotai"><svg class="social svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">fastdotai</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
